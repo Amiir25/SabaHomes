@@ -29,7 +29,7 @@ const Navbar = () => {
 
                 {/* Logo */}
                 <a href="/" className="flex items-center gap-2">
-                    <img src={assets.logo} alt="logo" className={`h-9 ${isScrolled && "invert opacity-80"}`} />
+                    <img src={assets.logo} alt="logo" className={`h-18 ${isScrolled && "invert opacity-80"}`} />
                 </a>
 
                 {/* Desktop Nav */}
