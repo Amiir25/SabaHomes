@@ -46,7 +46,7 @@ const Navbar = () => {
             {/* Desktop Right */}
             <div className="hidden md:flex items-center gap-4">
                 {/* <img src={assets.searchIcon} alt="Search Icon" className={`${isScrolled && invert} h-9 transition-all duration-500`} /> */}
-                <button className="bg-black text-white px-8 py-2.5 rounded-full ml-4 transition-all duration-500">
+                <button className="bg-white text-black px-8 py-2.5 rounded-full ml-4 transition-all duration-500">
                     Login
                 </button>
             </div>
