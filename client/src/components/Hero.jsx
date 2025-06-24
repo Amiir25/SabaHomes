@@ -4,7 +4,7 @@ import { assets, locations } from "../assets/assets";
 const Hero = () => {
     return (
         <>
-            <div className="bg-[url('/src/assets/hero-9.jpg')] bg-cover bg-center bg-no-repeat h-screen">
+            <div className="bg-[url('/src/assets/hero.jpg')] bg-cover bg-center bg-no-repeat h-screen">
                 <div className="flex flex-col items-center justify-around px-6 md:px-16 lg:px-24 xl:px-32 w-full h-screen
                 bg-[rgba(255,255,255,0.6)] text-gray-900 text-center">
 
