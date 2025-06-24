@@ -92,3 +92,14 @@ export const houses = [
         "image": house3,
     },
 ];
+
+// Exclusive Offers
+export const exclusiveOffers = [
+    {
+        _id: 1,
+        location: "Lebu",
+        description: "Enjoy a complimentary night and daily breakfast",
+        priceOff: 25, expiryDate: "Aug 31",
+        image: exclusiveOfferCardImg1
+    }
+];
