@@ -109,7 +109,7 @@ const Navbar = () => {
 
                 <img
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    src={assets.menuIcon} alt="Menu Icon" className={`${isScrolled && invert} h-5`} />
+                    src={assets.menuIcon} alt="Menu Icon" className={`${isScrolled && 'invert'} h-5`} />
             </div>
 
             {/* Mobile Menu */}
