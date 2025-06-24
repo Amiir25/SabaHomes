@@ -26,7 +26,7 @@ const Hero = () => {
                                 <label htmlFor="locationInput">Location</label>
                             </div>
                             <input list='locations' id="locationInput" type="text"
-                                className=" rounded border border-gray-400 px-2 py-1.5 mt-1.5 text-sm outline-none" placeholder="Type here" required />
+                                className=" rounded border border-gray-400 px-2 py-1.5 mt-1.5 text-sm outline-none" placeholder="Search location" required />
 
                             <datalist id="locations">
                                 {
@@ -42,7 +42,7 @@ const Hero = () => {
                                 <label htmlFor="propertyType">Property Type</label>
                             </div>
                             <input id="propertyType" type=""
-                                className=" rounded border border-gray-400 px-2 py-1.5 mt-1.5 text-sm outline-none" />
+                                className=" rounded border border-gray-400 px-2 py-1.5 mt-1.5 text-sm outline-none" placeholder="" />
                         </div>
 
                         <div>
@@ -61,10 +61,9 @@ const Hero = () => {
                                 className=" rounded border border-gray-400 px-2 py-1.5 mt-1.5 text-sm outline-none" />
                         </div>
 
-                        <button className='flex items-center justify-center gap-1 rounded-md bg-black py-3 px-4 text-white my-auto cursor-pointer max-md:w-full max-md:py-1' >
-                            <svg className="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" >
-                                <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
-                            </svg>
+                        <button className='flex items-center justify-center gap-1 rounded-md bg-[#FF0091] text-white hover:opacity-80
+                        py-3 px-4 my-auto cursor-pointer max-md:w-full max-md:py-1' >
+                            <img src={assets.searchIcon} alt="Search Icon" className="h-5 transition-all duration-500" />
                             <span>Search</span>
                         </button>
                     </form>
