@@ -87,7 +87,8 @@ const Navbar = () => {
                         (
                             <button
                                 onClick={openSignIn}
-                                className="bg-white text-black px-8 py-2.5 rounded-full ml-4 transition-all duration-500">
+                                className="border border-[#FF0091] not-visited:bg-white text-black hover:bg-[#FF0091] hover:text-white
+                                px-8 py-2.5 rounded-full ml-4 transition-all duration-500">
                                 Login
                             </button>
                         )
