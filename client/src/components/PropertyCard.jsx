@@ -33,7 +33,7 @@ const PropertyCard = ({house, index}) => {
                 </div>
 
                 <div className="flex items-center justify-between px-2 mt-3 font-medium pb-2 border-b border-b-gray-400">
-                    <p>Villa</p>
+                    <p>{house.type}</p>
                     <p><FontAwesomeIcon icon={faBed} className="me-1"/> {house.bedRoom} </p>
                     <p><FontAwesomeIcon icon={faBath} className="me-1"/> {house.bathRoom} </p>
                     <p><FontAwesomeIcon icon={faRulerCombined} className="me-1"/> {house.size} </p>
