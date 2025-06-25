@@ -36,10 +36,10 @@ const ExclusiveOffers = () => {
 
                                 <div>
                                     <p className="text-2xl font-medium">{item.description}</p>
-                                    <p className="text-xs text-white/70 mt-3">Expires {item.expiryDate}</p>
+                                    <p className="text-xs text-white/70 mt-2">Expires {item.expiryDate}</p>
                                 </div>
 
-                                <button className="flex items-center gap-2 mt-1">
+                                <button className="flex items-center gap-2 mt-8">
                                     View Offer
                                     <FontAwesomeIcon icon={faArrowRight} className="group-hover:translate-x-1 transition-all"/>
                                 </button>
