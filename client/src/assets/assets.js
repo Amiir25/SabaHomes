@@ -96,10 +96,24 @@ export const houses = [
 // Exclusive Offers
 export const exclusiveOffers = [
     {
-        _id: 1,
+        id: 1,
         location: "Lebu",
         description: "Enjoy a complimentary night and daily breakfast",
         priceOff: 25, expiryDate: "Aug 31",
-        image: exclusiveOfferCardImg1
-    }
+        image: house1
+    },
+    {
+        id: 2,
+        location: "Kazanchis",
+        description: "Enjoy a complimentary night and daily breakfast",
+        priceOff: 25, expiryDate: "Aug 31",
+        image: house3
+    },
+    {
+        id: 3,
+        location: "Ayat",
+        description: "Enjoy a complimentary night and daily breakfast",
+        priceOff: 25, expiryDate: "Aug 31",
+        image: house6
+    },
 ];
