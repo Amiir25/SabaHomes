@@ -6,7 +6,7 @@ import { useClerk, useUser, UserButton } from "@clerk/clerk-react";
 const Navbar = () => {
     const navLinks = [
         { name: 'Home', path: '/' },
-        { name: 'Buy', path: '/' },
+        { name: 'Properties', path: '/properties' },
         { name: 'Experiance', path: '/' },
         { name: 'Contact', path: '/' },
         { name: 'About', path: '/' },
