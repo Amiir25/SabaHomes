@@ -117,3 +117,29 @@ export const exclusiveOffers = [
         image: house6
     },
 ];
+
+// Happy Clients
+export const happyClients = [
+    {
+        id: 1,
+        name: "Emma Rodriguez",
+        address: "Addis Ababa, Ethiopia",
+        image: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200",
+        rating: 5,
+        review: "Exceptional service and attention to detail. Everything was handled professionally and efficiently from start to finish. Highly recommended!"
+    },
+    {
+        id: 2,
+        name: "Liam Johnson",
+        address: "Addis Ababa, Ethiopia",
+        image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200",
+        rating: 4, review: "I’m truly impressed by the quality and consistency. The entire process was smooth, and the results exceeded all expectations. Thank you!"
+    },
+    {
+        id: 3,
+        name: "Sophia Lee",
+        address: "Addis Ababa, Ethiopia",
+        image: "https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=200",
+        rating: 5, review: "Fantastic experience! From start to finish, the team was professional, responsive, and genuinely cared about delivering great results."
+    }
+];
