@@ -120,7 +120,8 @@ const Properties = () => {
                                     </p>
 
                                     {/* Button */}
-                                    <button 
+                                    <button
+                                    onClick={() => {navigate(`/properties/${house._id}`)}}
                                     className="text-sm md:text-lg p-1 md:p-2 mt-4 rounded text-white bg-[#FF0091] hover:opacity-85 cursor-pointer">
                                         View Detail
                                     </button>
