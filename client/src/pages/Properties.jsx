@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { houses } from "../assets/assets";
+import { assets, houses } from "../assets/assets";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBath, faBed, faHouse, faLocationDot, faRuler, faRulerCombined } from "@fortawesome/free-solid-svg-icons";
+import { faBath, faBed, faHouse, faLocationDot, faRulerCombined } from "@fortawesome/free-solid-svg-icons";
 
 // Checkbox component to create multiple checkboxes
 const Checkbox = ({label, selected = false, onChange = () => {}}) => {
@@ -93,7 +93,8 @@ const Properties = () => {
                                     <div className="grid grid-cols-2 gap-4 text-xs md:text-sm text-gray-500 mt-3 max-w-48">
 
                                         <div className="flex items-center gap-1">
-                                            <FontAwesomeIcon icon={faHouse} />
+                                            {/* <FontAwesomeIcon icon={faHouse} /> */}
+                                            <img src={assets.villa} alt="" className="w-5" />
                                             <p>{house.type}</p>
                                         </div>
 
