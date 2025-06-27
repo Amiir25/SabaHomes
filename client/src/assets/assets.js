@@ -1,5 +1,6 @@
 import calenderIcon from './calenderIcon.svg';
 import closeIcon from './closeIcon.svg';
+import villa from './villa.png';
 
 // Logo
 import hero from './hero.jpg';
@@ -18,6 +19,11 @@ import house4 from './houses/house-4.jpg';
 import house5 from './houses/house-5.jpg';
 import house6 from './houses/house-6.jpg';
 
+// Rooms
+import room1 from './livingRooms/room-1.jpg';
+import room2 from './livingRooms/room-2.jpg';
+import room3 from './livingRooms/room-3.jpg';
+
 
 export const assets = {
     calenderIcon,
@@ -35,6 +41,7 @@ export const assets = {
     logoPink,
     menuIcon,
     searchIcon,
+    villa,
 }
 
 // Locations
@@ -60,6 +67,7 @@ export const houses = [
         "bathRoom": 2,
         "size": "1587 sq ft",
         "image": house2,
+        "rooms": [room1, room2, room3, house1, house2, house3, house4, house5],
     },
     {
         "_id": "Bet00A14",
@@ -70,6 +78,7 @@ export const houses = [
         "bathRoom": 3,
         "size": "1587 sq ft",
         "image": house5,
+        "rooms": [room1, room2, room3, house1, house2, house3, house4, house5],
     },
     {
         "_id": "sum0BAD4",
@@ -80,6 +89,7 @@ export const houses = [
         "bathRoom": 2,
         "size": "1587 sq ft",
         "image": house4,
+        "rooms": [room1, room2, room3, house1, house2, house3, house4, house5],
     },
     {
         "_id": "leb00AD1",
@@ -90,6 +100,7 @@ export const houses = [
         "bathRoom": 2,
         "size": "1587 sq ft",
         "image": house3,
+        "rooms": [room1, room2, room3, house1, house2, house3, house4, house5],
     },
 ];
 
@@ -142,4 +153,28 @@ export const happyClients = [
         image: "https://images.unsplash.com/photo-1701615004837-40d8573b6652?q=80&w=200",
         rating: 5, review: "Fantastic experience! From start to finish, the team was professional, responsive, and genuinely cared about delivering great results."
     }
+];
+
+// Common Specifications
+export const commonSpecifications = [
+    {
+        icon: "House",
+        title: "Clean & Safe Stay",
+        description: "A well-maintained and hygienic space just for you."
+    },
+    {
+        icon: "Right",
+        title: "Enhanced Cleaning",
+        description: "This host follows Staybnb's strict cleaning standards."
+    },
+    {
+        icon: "Location",
+        title: "Excellent Location",
+        description: "90% of guests rated the location 5 stars."
+    },
+    {
+        icon: "Heart",
+        title: "Smooth Check-In",
+        description: "100% of guests gave check-in a 5-star rating."
+    },
 ];
