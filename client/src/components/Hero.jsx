@@ -4,14 +4,14 @@ import { assets, locations } from "../assets/assets";
 const Hero = () => {
     return (
         <>
-            <div className="bg-[url('/src/assets/hero.jpg')] bg-cover bg-center bg-no-repeat h-screen">
-                <div className="flex flex-col items-center justify-around px-6 md:px-16 lg:px-24 xl:px-32 w-full h-screen
-                bg-[rgba(255,255,255,0.6)] text-gray-900 text-center">
+            <div className="bg-[url('/bg-8.png')] bg-cover bg-center bg-no-repeat h-screen">
+                <div className="flex flex-col items-left justify-around px-6 md:px-16 lg:px-24 xl:px-32 w-full h-screen
+                bg-gradient-to-r from-gray-50/90 to-gray-50/5 text-gray-900 text-cente">
 
                     <div className="mt-50">
                         <p className="md:text-3xl font-black">Homes for Every Stage of Life</p>
                         <h1 className="md:text-6xl font-light mt-2 max-w-3xl">
-                            Find a place that reflects who you are!
+                            Find Your Perfect Home in Addis Ababa!
                         </h1>
                         {/* <p className="max-w-130 mt-2 text-sm md:text-base">
                             Whether you’re starting fresh, growing your family, or investing in the future—we’ve got you covered. Get your home—faster, easier, and without the guesswork.
