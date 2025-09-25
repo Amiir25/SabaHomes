@@ -5,9 +5,9 @@ const Hero = () => {
 
     // Images for dynamic background
     const bgImages = [
-        'bg-1.jpg', 'bg-2.jpg', 'bg-3.jpg', 'bg-4.jpg', 'bg-5.jpg',
-        'bg-7.png', 'bg-8.png', 'bg-9.jpg', 'bg-10.jpg',
-        'bg-12.jpg', 'bg-13.jpg', 'bg-14.jpg',
+        'ap-1', 'ap-2', 'ap-3', 'ap-4', 'ap-5',
+        'bg-1.jpg', 'bg-2.png', 'bg-3.jpg', 'bg-4.jpg',
+        'room-1', 'room-2', 'room-3', 'room-4', 'room-5', 'room-6', 'room-7'
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -15,7 +15,7 @@ const Hero = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex(prev => (prev + 1) % bgImages.length);
-        }, 5000);
+        }, 2000);
 
         return () => clearInterval(interval);
     }, [bgImages.length]);
@@ -25,7 +25,9 @@ const Hero = () => {
                 {/* Sliding image container */}
                 {
                     bgImages.map((image, i) => (
-                        <div style={{ backgroundImage: `url(${image})` }}
+                        <div 
+                        key={i}
+                        style={{ backgroundImage: `url(${image})` }}
                         className={`absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-3000
                         ${ i === currentIndex ? 'opacity-100' : 'opacity-0' }`}></div>
                     ))
