@@ -6,7 +6,7 @@ const Hero = () => {
         <>
             <div className="bg-[url('/bg-10.jpg')] bg-cover bg-center bg-no-repeat h-screen">
                 <div className="flex flex-col items-left justify-around px-6 md:px-16 lg:px-24 xl:px-32 w-full h-screen
-                bg-gradient-to-r from-white to-white/0 text-gray-900">
+                bg-gradient-to-r from-white via-white/80 to-white/0 text-gray-900">
 
                     <div className="mt-50 w-fit text-center">
                         <p className="md:text-3xl font-black">Homes for Every Stage of Life</p>
