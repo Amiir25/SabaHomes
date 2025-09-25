@@ -4,11 +4,11 @@ import { assets, locations } from "../assets/assets";
 const Hero = () => {
     return (
         <>
-            <div className="bg-[url('/bg-8.png')] bg-cover bg-center bg-no-repeat h-screen">
+            <div className="bg-[url('/bg-10.jpg')] bg-cover bg-center bg-no-repeat h-screen">
                 <div className="flex flex-col items-left justify-around px-6 md:px-16 lg:px-24 xl:px-32 w-full h-screen
-                bg-gradient-to-r from-gray-50/90 to-gray-50/5 text-gray-900 text-cente">
+                bg-gradient-to-r from-white to-white/0 text-gray-900">
 
-                    <div className="mt-50">
+                    <div className="mt-50 w-fit text-center">
                         <p className="md:text-3xl font-black">Homes for Every Stage of Life</p>
                         <h1 className="md:text-6xl font-light mt-2 max-w-3xl">
                             Find Your Perfect Home in Addis Ababa!
