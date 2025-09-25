@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { assets, locations } from "../assets/assets";
 
 const Hero = () => {
+
+    // Images for dynamic background
+    const bgImages = [
+        'bg-6.png', 'bg-8.png', 'bg-9.jpg', 'bg-10.jpg'
+    ];
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentIndex(prevIndex => 
+                prevIndex === bgImages.length - 1 ? 0 : prevIndex + 1
+            )
+        }, 5000);
+    }, [bgImages.length]);
     return (
         <>
-            <div className="bg-[url('/bg-10.jpg')] bg-cover bg-center bg-no-repeat h-screen">
+            <div style={{ backgroundImage: `url(${bgImages[currentIndex]})` }} className='bg-cover bg-center bg-no-repeat h-screen'>
                 <div className="flex flex-col items-left gap-10 px-6 md:px-16 lg:px-24 xl:px-32 w-full h-screen
                 bg-gradient-to-r from-white/95 via-white/90 to-white/0 text-gray-900">
 
