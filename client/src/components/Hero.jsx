@@ -5,17 +5,17 @@ const Hero = () => {
     return (
         <>
             <div className="bg-[url('/bg-10.jpg')] bg-cover bg-center bg-no-repeat h-screen">
-                <div className="flex flex-col items-left justify-around px-6 md:px-16 lg:px-24 xl:px-32 w-full h-screen
+                <div className="flex flex-col items-left gap-20 px-6 md:px-16 lg:px-24 xl:px-32 w-full h-screen
                 bg-gradient-to-r from-white via-white/80 to-white/0 text-gray-900">
 
-                    <div className="mt-50 w-fit text-center">
-                        <p className="md:text-3xl font-black">Homes for Every Stage of Life</p>
-                        <h1 className="md:text-6xl font-light mt-2 max-w-3xl">
+                    <div className="mt-45 w-fit text-center">
+                        {/* <p className="md:text-3xl font-black">Homes for Every Stage of Life</p> */}
+                        <h1 className="md:text-6xl font-light mt-2 max-w-3xl [text-shadow:4px_4px_12px_rgba(0,0,0,0.8)]">
                             Find Your Perfect Home in Addis Ababa!
                         </h1>
-                        {/* <p className="max-w-130 mt-2 text-sm md:text-base">
-                            Whether you’re starting fresh, growing your family, or investing in the future—we’ve got you covered. Get your home—faster, easier, and without the guesswork.
-                        </p> */}
+                        <p className="max-w-130 mt-2 text-xl text-center mx-auto [text-shadow:1px_1px_2px_rgba(0,0,0,0.4)] tracking-wider">
+                           SabaHomes connects you to the finest apartments, villas, and offices across Addis Ababa.
+                        </p>
                     </div>
 
                     {/* Form */}
