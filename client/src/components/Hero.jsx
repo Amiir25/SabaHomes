@@ -6,14 +6,13 @@ const Hero = () => {
     // Background images for large screen
     const desktopBgImages = [
         'bg-image-1.jpg', 'bg-image-2.jpg', 'bg-image-3.jpg', 'bg-image-4.jpg',
-        'bg-image-5.jpg', 'bg-image-6.jpg', 'bg-image-7.jpg', 'bg-image-8.jpg',
+        'bg-image-5.jpg', 'bg-image-6.jpg', 'bg-image-7.jpg', 'bg-image-8.jpg'
     ];
 
     // Background images for small screen
     const mobileBgImages = [
-        // 'bg-1.jpg', 'bg-2.jpg', 'bg-3.jpg', 'bg-4.jpg',
         'bg-small-1.jpg', 'bg-small-2.jpg', 'bg-small-3.jpg', 'bg-small-4.jpg',
-        'bg-small-5.jpg', 'bg-small-6.jpg', 'bg-small-7.jpg', 'bg-small-8.jpg', 'bg-small-9.jpg'
+        'bg-small-5.jpg', 'bg-small-6.jpg', 'bg-small-7.jpg', 'bg-small-8.jpg'
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -34,7 +33,7 @@ const Hero = () => {
                         <div 
                         key={i}
                         style={{ backgroundImage: `url(${image})` }}
-                        className={`hidden md:absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-3000
+                        className={`hidden md:block absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-3000
                         ${ i === currentIndex ? 'opacity-100' : 'opacity-0' }`}/>
                     ))
                 }
@@ -63,7 +62,7 @@ const Hero = () => {
                     </div>
 
                     {/* Form */}
-                    <form className='max-w-2xl md:w-fit mt-6 bg-white/50 border text-gray-900 rounded-lg px-8 py-4 
+                    <form className='w md:w-fit mt-6 bg-white/50 border text-gray-900 rounded-lg px-8 py-4 
                     flex flex-col md:flex-row max-md:items-start gap-4 max-md:mx-auto'>
                         {/* Location */}
                         <div>
