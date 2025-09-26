@@ -5,9 +5,8 @@ const Hero = () => {
 
     // Images for dynamic background
     const bgImages = [
-        'ap-1', 'ap-2', 'ap-3', 'ap-4', 'ap-5',
-        'bg-1.jpg', 'bg-2.png', 'bg-3.jpg', 'bg-4.jpg',
-        'room-1', 'room-2', 'room-3', 'room-4', 'room-5', 'room-6', 'room-7'
+        'bg-image-1.jpg', 'bg-image-2.jpg', 'bg-image-3.jpg', 'bg-image-4.jpg',
+        'bg-image-5.jpg', 'bg-image-6.jpg', 'bg-image-7.jpg', 'bg-image-8.jpg',
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -15,13 +14,13 @@ const Hero = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex(prev => (prev + 1) % bgImages.length);
-        }, 2000);
+        }, 5000);
 
         return () => clearInterval(interval);
     }, [bgImages.length]);
     return (
         <>
-            <div className='relative w-screen h-screen overflow-x-scroll'>
+            <div className='relative h-screen'>
                 {/* Sliding image container */}
                 {
                     bgImages.map((image, i) => (
