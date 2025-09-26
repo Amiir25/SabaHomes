@@ -47,13 +47,11 @@ const Hero = () => {
                     {/* Form */}
                     <form className='w-fit mt-6 bg-white/80 border text-gray-900 rounded-lg px-6 py-4 
                     flex flex-col md:flex-row max-md:items-start gap-4 max-md:mx-auto'>
-
+                        {/* Location */}
                         <div>
-                            <div className='flex items-center gap-2'>
-                                <label htmlFor="locationInput">Location</label>
-                            </div>
+                            <label htmlFor="locationInput" className="block text-sm md:text-md">Location</label>
                             <input list='locations' id="locationInput" type="text"
-                                className=" rounded border border-gray-400 px-2 py-1.5 mt-1.5 text-sm outline-none" placeholder="Search location" required />
+                            className=" rounded border border-gray-400 px-2 py-1 md:py-1.5 mt-1.5 text-sm outline-none" placeholder="Select location" required />
 
                             <datalist id="locations">
                                 {
@@ -63,21 +61,33 @@ const Hero = () => {
                                 }
                             </datalist>
                         </div>
-
+                        {/* Propery type */}
                         <div>
-                            <div className='flex items-center gap-2'>
-                                <label htmlFor="propertyType">Property Type</label>
-                            </div>
-                            <input id="propertyType" type=""
-                                className=" rounded border border-gray-400 px-2 py-1.5 mt-1.5 text-sm outline-none" placeholder="" />
+                            <label htmlFor="locationInput" className="block text-sm md:text-md">Property type</label>
+                            <input list='locations' id="locationInput" type="text"
+                            className=" rounded border border-gray-400 px-2 py-1 md:py-1.5 mt-1.5 text-sm outline-none" placeholder="Select type" required />
+
+                            <datalist id="locations">
+                                {
+                                    locations.map((location, index) => (
+                                        <option value={location} key={index} />
+                                    ))
+                                }
+                            </datalist>
                         </div>
-
+                        {/* Price */}
                         <div>
-                            <div className='flex items-center gap-2'>
-                                <label htmlFor="priceLimit">Price Limit</label>
-                            </div>
-                            <input id="priceLimit" type=""
-                                className=" rounded border border-gray-400 px-2 py-1.5 mt-1.5 text-sm outline-none" />
+                            <label htmlFor="locationInput" className="block text-sm md:text-md">Price limit</label>
+                            <input list='locations' id="locationInput" type="text"
+                            className=" rounded border border-gray-400 px-2 py-1 md:py-1.5 mt-1.5 text-sm outline-none" placeholder="Select price limit" required />
+
+                            <datalist id="locations">
+                                {
+                                    locations.map((location, index) => (
+                                        <option value={location} key={index} />
+                                    ))
+                                }
+                            </datalist>
                         </div>
 
                         <button className='flex items-center justify-center gap-1 rounded-md bg-[#FF0091] text-white hover:opacity-80
