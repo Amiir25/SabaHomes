@@ -63,14 +63,14 @@ const Hero = () => {
                     </div>
 
                     {/* Form */}
-                    <form className='w-fit mt-6 bg-white/50 border text-gray-900 rounded-lg px-2 py-4 
+                    <form className='max-w-2xl md:w-fit mt-6 bg-white/50 border text-gray-900 rounded-lg px-8 py-4 
                     flex flex-col md:flex-row max-md:items-start gap-4 max-md:mx-auto'>
                         {/* Location */}
                         <div>
                             <label htmlFor="locationInput" className="block text-sm md:text-md">Location</label>
                             <input list='locations' id="locationInput" type="text"
                             placeholder="Select location" required
-                            className=" rounded border border-gray-400 px-2 py-1 md:py-1.5 mt-1.5 text-sm outline-none" />
+                            className=" rounded border border-gray-400 px-9 py-1 md:py-1.5 mt-1.5 text-sm outline-none" />
 
                             <datalist id="locations">
                                 {
@@ -85,7 +85,7 @@ const Hero = () => {
                             <label htmlFor="locationInput" className="block text-sm md:text-md">Property type</label>
                             <input list='locations' id="locationInput" type="text"
                             placeholder="Select type" required
-                            className=" rounded border border-gray-400 px-2 py-1 md:py-1.5 mt-1.5 text-sm outline-none" />
+                            className=" rounded border border-gray-400 px-9 py-1 md:py-1.5 mt-1.5 text-sm outline-none" />
 
                             <datalist id="locations">
                                 {
@@ -100,7 +100,7 @@ const Hero = () => {
                             <label htmlFor="locationInput" className="block text-sm md:text-md">Price limit</label>
                             <input list='locations' id="locationInput" type="text"
                             placeholder="Select price limit" required
-                            className=" rounded border border-gray-400 px-2 py-1 md:py-1.5 mt-1.5 text-sm outline-none" />
+                            className=" rounded border border-gray-400 px-9 py-1 md:py-1.5 mt-1.5 text-sm outline-none" />
 
                             <datalist id="locations">
                                 {
