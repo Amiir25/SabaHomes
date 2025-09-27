@@ -5,14 +5,14 @@ const Hero = () => {
 
     // Background images for large screen
     const desktopBgImages = [
-        'bg-large-1.jpg', 'bg-large-2.jpg', 'bg-large-3.jpg', 'bg-large-4.jpg',
-        'bg-large-5.jpg', 'bg-large-6.jpg', 'bg-large-7.jpg', 'bg-large-8.jpg'
+        // 'bg-large-1.jpg', 'bg-large-2.jpg', 'bg-large-3.jpg', 'bg-large-4.jpg',
+        // 'bg-large-5.jpg', 'bg-large-6.jpg', 'bg-large-7.jpg', 'bg-large-8.jpg'
     ];
 
     // Background images for small screen
     const mobileBgImages = [
-        'bg-small-1.jpg', 'bg-small-2.jpg', 'bg-small-3.jpg', 'bg-small-4.jpg',
-        'bg-small-5.jpg', 'bg-small-6.jpg', 'bg-small-7.jpg', 'bg-small-8.jpg'
+    //     'bg-small-1.jpg', 'bg-small-2.jpg', 'bg-small-3.jpg', 'bg-small-4.jpg',
+    //     'bg-small-5.jpg', 'bg-small-6.jpg', 'bg-small-7.jpg', 'bg-small-8.jpg'
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -69,7 +69,7 @@ const Hero = () => {
                             <label htmlFor="locationInput" className="block text-sm md:text-md">Location</label>
                             <input list='locations' id="locationInput" type="text"
                             placeholder="Select location" required
-                            className=" rounded border border-gray-400 px-9 py-1 md:py-1.5 mt-1.5 text-sm outline-none" />
+                            className=" rounded border border-gray-400 px-9 md:px-2 py-1 md:py-1.5 mt-1.5 text-sm outline-none" />
 
                             <datalist id="locations">
                                 {
@@ -84,7 +84,7 @@ const Hero = () => {
                             <label htmlFor="locationInput" className="block text-sm md:text-md">Property type</label>
                             <input list='locations' id="locationInput" type="text"
                             placeholder="Select type" required
-                            className=" rounded border border-gray-400 px-9 py-1 md:py-1.5 mt-1.5 text-sm outline-none" />
+                            className=" rounded border border-gray-400 px-9 md:px-2 py-1 md:py-1.5 mt-1.5 text-sm outline-none" />
 
                             <datalist id="locations">
                                 {
@@ -99,7 +99,7 @@ const Hero = () => {
                             <label htmlFor="locationInput" className="block text-sm md:text-md">Price limit</label>
                             <input list='locations' id="locationInput" type="text"
                             placeholder="Select price limit" required
-                            className=" rounded border border-gray-400 px-9 py-1 md:py-1.5 mt-1.5 text-sm outline-none" />
+                            className=" rounded border border-gray-400 px-9 md:px-2 py-1 md:py-1.5 mt-1.5 text-sm outline-none" />
 
                             <datalist id="locations">
                                 {
