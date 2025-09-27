@@ -5,8 +5,8 @@ const Hero = () => {
 
     // Background images for large screen
     const desktopBgImages = [
-        'bg-image-1.jpg', 'bg-image-2.jpg', 'bg-image-3.jpg', 'bg-image-4.jpg',
-        'bg-image-5.jpg', 'bg-image-6.jpg', 'bg-image-7.jpg', 'bg-image-8.jpg'
+        'bg-large-1.jpg', 'bg-large-2.jpg', 'bg-large-3.jpg', 'bg-large-4.jpg',
+        'bg-large-5.jpg', 'bg-large-6.jpg', 'bg-large-7.jpg', 'bg-large-8.jpg'
     ];
 
     // Background images for small screen
@@ -32,7 +32,7 @@ const Hero = () => {
                     desktopBgImages.map((image, i) => (
                         <div 
                         key={i}
-                        style={{ backgroundImage: `url(${image})` }}
+                        style={{ backgroundImage: `url(/bg-large/${image})` }}
                         className={`hidden md:block absolute inset-0 bg-cover bg-center bg-no-repeat transition-opacity duration-3000
                         ${ i === currentIndex ? 'opacity-100' : 'opacity-0' }`}/>
                     ))
