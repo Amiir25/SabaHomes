@@ -47,7 +47,7 @@ const Navbar = () => {
 
             {/* Logo */}
             <Link href="/">
-                <img src='/logo.png' alt="logo" className={`w-20 ${isScrolled && "opacity-80"}`} />
+                <img src='/logo.webp' alt="logo" className={`w-20 ${isScrolled && "opacity-80"}`} />
             </Link>
 
             {/* Desktop Nav */}
