@@ -14,7 +14,7 @@ const FeaturedProperties = () => {
             {/* Title */}
             <Title
             title="Featured Properties"
-            subtitle="Discover our handpicked selection of exceptional properties in Addis Ababa, offering unparalleled luxury experiance." />
+            subtitle="Discover our handpicked selection of exceptional properties across Ethiopia's most desirable locations." />
 
             {/* Houses */}
             <div className="flex flex-wrap items-center justify-center gap-6 mt-20">
