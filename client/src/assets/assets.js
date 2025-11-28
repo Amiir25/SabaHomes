@@ -12,17 +12,17 @@ import menuIcon from './menuIcon.svg';
 import searchIcon from './searchIcon.svg';
 
 // Houses
-import house1 from './houses/house-1.jpg';
-import house2 from './houses/house-2.jpg';
-import house3 from './houses/house-3.jpg';
-import house4 from './houses/house-4.jpg';
+import house1 from './houses/house-1.webp';
+import house2 from './houses/house-2.webp';
+import house3 from './houses/house-3.webp';
+import house4 from './houses/house-4.webp';
 import house5 from './houses/house-5.jpg';
 import house6 from './houses/house-6.jpg';
 
 // Rooms
-import room1 from './livingRooms/room-1.jpg';
-import room2 from './livingRooms/room-2.jpg';
-import room3 from './livingRooms/room-3.jpg';
+import room1 from './livingRooms/room-1.webp';
+import room2 from './livingRooms/room-2.webp';
+import room3 from './livingRooms/room-3.webp';
 
 
 export const assets = {
